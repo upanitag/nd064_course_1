@@ -5,7 +5,7 @@ COPY . /app
 RUN ls -l
 WORKDIR /app
 RUN ls -l
-RUN pip install -r solutions/requirements.txt
+RUN pip install -r solutions/python-helloworld/requirements.txt
 
 # command to run on container start
 CMD [ "python", "app.py" ]
