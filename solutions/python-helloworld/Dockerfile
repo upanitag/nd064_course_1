@@ -3,7 +3,7 @@ LABEL maintainer="Katie Gamanji"
 
 COPY . /app
 WORKDIR /app
-COPY requirements.txt .
+RUN ls -l
 RUN pip install -r requirements.txt
 
 # command to run on container start
