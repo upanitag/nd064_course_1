@@ -5,7 +5,7 @@ COPY . /app
 RUN ls -l
 WORKDIR /app
 RUN ls -l
-RUN pip install -r requirements.txt
+RUN pip install -r solutions/requirements.txt
 
 # command to run on container start
 CMD [ "python", "app.py" ]
