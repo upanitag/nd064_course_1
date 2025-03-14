@@ -1,8 +1,9 @@
 FROM python:3.8
 
-COPY . /app
-RUN ls -l
+COPY project/techtrends/init_db.py /app
+COPY project/techtrends/app.py /app
 WORKDIR /app
+RUN ls -l
 RUN pip install -r project/techtrends/requirements.txt
 
 # Expose port 3111
