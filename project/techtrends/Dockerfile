@@ -1,7 +1,7 @@
 FROM python:3.8
 
-COPY project/techtrends/init_db.py /app
-COPY project/techtrends/app.py /app
+COPY project/techtrends/init_db.py /app/
+COPY project/techtrends/app.py /app/
 WORKDIR /app
 RUN ls -l
 RUN pip install -r project/techtrends/requirements.txt
