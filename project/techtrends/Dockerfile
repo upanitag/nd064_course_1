@@ -1,6 +1,7 @@
 FROM python:3.8
 
 COPY . /app
+RUN ls -l
 WORKDIR /app
 RUN pip install -r project/techtrends/requirements.txt
 
