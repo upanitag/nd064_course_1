@@ -1,0 +1,39 @@
+namespace:
+  name: sandbox
+
+service:
+  port: 4111
+  targetport: 3111
+  protocol: TCP
+  type: ClusterIP
+ 
+image:
+  repository: upanitag/techtrends:latest 
+  tag: latest
+  pullpolicy: IfNotPresent
+
+replicaCount: 1
+
+containerPort: 3111
+
+resources:
+  requests:
+    memory: 64Mi
+    cpu: 250M
+
+  limits:
+    memory: 128Mi
+    cpu: 500M
+
+livenessProbe:
+  httpGet:
+    path: /healthz
+    port: 3111
+
+readinessProbe:
+  httpGet:
+    path: /healthz
+    port: 3111
+
+
+
