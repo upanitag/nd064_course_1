@@ -16,13 +16,13 @@ spec:
       containers:
         - name:  techtrends
           image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
-          #resources:
-            #requests:
-              #memory: {{ .Values.resources.requests.memory }}
-              #cpu: {{ .Values.resources.requests.cpu }}
-            #limits:
-              #memory: {{ .Values.resources.limits.memory }}
-              #cpu: {{ .Values.resources.limits.cpu }}
+          resources:
+            requests:
+              memory: {{ .Values.resources.requests.memory }}
+              cpu: {{ .Values.resources.requests.cpu }}
+            limits:
+              memory: {{ .Values.resources.limits.memory }}
+              cpu: {{ .Values.resources.limits.cpu }}
           livenessProbe:
             httpGet:
               path: {{ .Values.livenessProbe.httpGet.path }}
