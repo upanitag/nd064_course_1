@@ -9,11 +9,11 @@ image:
 
 replicaCount: 5
 
-resources:
-  requests:
-    memory: 128Mi
-    cpu: 350M
+#resources:
+  #requests:
+    #memory: 128Mi
+    #cpu: 350M
 
-  limits:
-    memory: 256Mi
-    cpu: 500M
+  #limits:
+    #memory: 256Mi
+    #cpu: 500M
