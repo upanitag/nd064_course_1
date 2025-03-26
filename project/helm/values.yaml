@@ -16,14 +16,14 @@ replicaCount: 1
 
 containerPort: 3111
 
-resources:
-  requests:
-    memory: 64Mi
-    cpu: 250M
+#resources:
+  #requests:
+    #memory: 64Mi
+    #cpu: 250M
 
-  limits:
-    memory: 128Mi
-    cpu: 500M
+  #limits:
+    #memory: 128Mi
+    #cpu: 500M
 
 livenessProbe:
   httpGet:
