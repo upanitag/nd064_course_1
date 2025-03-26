@@ -9,11 +9,11 @@ image:
 
 replicaCount: 5
 
-# Uncomment and adjust resource requests and limits as needed
-# resources:
-#   requests:
-#     memory: 128Mi
-#     cpu: 350m
-#   limits:
-#     memory: 256Mi
-#     cpu: 500m
+
+ resources:
+   requests:
+     memory: 128Mi
+     cpu: 350m
+   limits:
+     memory: 256Mi
+     cpu: 500m
