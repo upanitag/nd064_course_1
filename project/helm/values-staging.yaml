@@ -6,11 +6,11 @@ service:
  
 replicaCount: 3
 
-resources:
-  requests:
-    memory: 90Mi
-    cpu: 300M
+#resources:
+  #requests:
+    #memory: 90Mi
+    #cpu: 300M
 
-  limits:
-    memory: 128Mi
-    cpu: 500M
+  #limits:
+    #memory: 128Mi
+    #cpu: 500M
