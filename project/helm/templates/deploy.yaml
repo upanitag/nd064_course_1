@@ -16,7 +16,7 @@ spec:
       containers:
         - name:  techtrends
           image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
-          resources:
+          #resources:
             #requests:
               #memory: {{ .Values.resources.requests.memory }}
               #cpu: {{ .Values.resources.requests.cpu }}
