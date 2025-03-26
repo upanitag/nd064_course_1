@@ -17,7 +17,7 @@ replicaCount: 1
 containerPort: 3111
 
 
- resources:
+resources:
    requests:
      memory: 64Mi
      cpu: 250m
