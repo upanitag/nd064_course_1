@@ -3,7 +3,7 @@ FROM python:3.8
 COPY techtrends/ /app/
 
 WORKDIR /app
-RUN ls -l
+
 RUN pip install -r requirements.txt
 
 # Expose port 3111
