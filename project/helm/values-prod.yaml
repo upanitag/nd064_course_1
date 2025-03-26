@@ -3,17 +3,17 @@ namespace:
 
 service:
   port: 7111
- 
+
 image:
   pullpolicy: Always
 
 replicaCount: 5
 
-#resources:
-  #requests:
-    #memory: 128Mi
-    #cpu: 350M
-
-  #limits:
-    #memory: 256Mi
-    #cpu: 500M
+# Uncomment and adjust resource requests and limits as needed
+# resources:
+#   requests:
+#     memory: 128Mi
+#     cpu: 350m
+#   limits:
+#     memory: 256Mi
+#     cpu: 500m
