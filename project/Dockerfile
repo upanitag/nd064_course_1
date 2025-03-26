@@ -1,12 +1,6 @@
 FROM python:3.8
+COPY techtrends /app/techtrends
 
-COPY techtrends/init_db.py /app/
-COPY techtrends/app.py /app/
-COPY techtrends/requirements.txt /app/
-COPY techtrends/schema.sql /app/
-COPY techtrends/database.db /app/
-COPY techtrends/static/css/main.css /app/static/css/main.css
-COPY techtrends/templates/*.html /app/templates/
 WORKDIR /app
 RUN ls -l
 RUN pip install -r requirements.txt
